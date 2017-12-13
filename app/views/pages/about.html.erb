@@ -6,20 +6,11 @@
 
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        <%= image_tag "FCV_1990-2010_bn.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
         <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
               <h4><%= skill.title %></h4>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped bg-warning"
-                  role="progressbar"
-                  aria-valuenow="<%= skill.percent_utilized %>"
-                  aria-valuemax="100"
-                  style="width: <%= skill.percent_utilized %>%"
-                ></div>
-              </div>
             </div>
           <% end %>
         </div>
@@ -27,19 +18,32 @@
 
       <div class="col-md-8">
         <p>
-          With over a decade of development experience in a number of industries I realized that the typical product creation process between clients and developers was flawed. All too often developers rarely communicate to clients throughout the development stage, resulting in a final product that fails to reach the goal sought by the customer and end user.
+          I am Ferran Cabrer i Vilagut, I am 58 years old (Birth date: 1958-03-30). I am married and I have a child of 27th. I am Industrial and Agriculture Engineer. I am Catalan, thinking in and speaking Catalan. I born and living in Barcelona. My experience is wide and long, mainly in Information Society Technologies and in Open-solutions for collaborative working spaces. I founded CONSEN Euro-Group EEIG a non-profit European Grouping for sharing resources and competences in an alliance of professionals and micro-companies for presenting and carrying out European research and innovation projects in the field of Open Info-Spaces technologies. I work for the European Commission in Research projects. Presently, I work at the Research Executive Agency (REA) of the European Commission (EC)  as Expert Evaluator of Research and Technological Development projects. 
         </p>
 
         <p>
-          For this reason I decided to utilize a completely different development pattern that focuses on highly focused communication and transparent design patterns. When I take on a project not only do I work to craft the application according to the client's specifications, I give daily updates to ensure that the project is aligning properly with the client's goals. The end result is the right product, delivered on time, and on budget.
+          Ferran Cabrer i Vilagut is a senior entrepreneur, expert in Information
+          and Communication technological development and innovation.
+          He has qualified competences in front-end design, web development
+          and server administration, moreover, in Drupal 'theming' layout design, content
+          architecture and user interaction, and proven skills in building and manage
+          international consortia/communities of research and innovation, and in the
+          conceptualisation and application of European research projects (more than forty proposal and ten projects).
+        </p>
+        <p>
+          Since 2004 in the first versions of Drupal 4, he has contributed to the development and
+          testing of modules of this CMS. This expertise has been applied to develop and manage more than 50 project, professional and personal websites in their own dedicated/virtual servers. At the dawn of the Internet he has been a pioneer in their use for business, so he was teaching to informatics recently graduated in 1999.
+          In the last months, he has been enrolled in courses online (MOOC) of administration of
+          information systems servers and programming, Internet, web and mobile applications development, Innovation and Entrepreneurship technology, Lynux/Ubuntu, Ruby on Rails, Cyber-Security and Networking. Currently, As Full Stack Web Developer 'junior' I am an available Freelancer looking for works. 
         </p>
 
-        <%= render 'about_buttons' %>
-        <%= render 'about_job_history' %>
-        <%= render 'about_education' %>
-        <%= render 'about_courses' %>
-        <%= render 'about_press' %>
+  
+
       </div>
+
+
+      <%= image_tag 'FCV_CV_2017.png', alt: 'Ferran Cabrer i Vilagut resume' %>
+
     </div>
   </div>
 </div>

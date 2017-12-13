@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Ferran Cabrer i Vilagut', 'All rights reserved'
   end
 
   def nav_items
@@ -34,18 +34,18 @@ module ApplicationHelper
         url: contact_path,
         title: 'Contact'
       },
-      {
-        url: blogs_path,
-        title: 'Blog'
-      },
-      {
-        url: portfolios_path,
-        title: 'Portfolio'
-      },
-      {
-        url: tech_news_path,
-        title: 'Tech News'
-      },
+ #    {
+ #      url: blogs_path,
+ #      title: 'Blog'
+ #    },
+ #    {
+ #      url: portfolios_path,
+ #      title: 'Portfolio'
+ #    },
+  #   {
+  #      url: tech_news_path,
+  #      title: 'Tech News'
+  #   },
     ]
   end
 
@@ -72,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
+    js add_gritter(msg, title: "Ferran Cabrer i Vilagut", sticky: false)
   end
 
 end
